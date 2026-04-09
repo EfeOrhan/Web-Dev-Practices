@@ -25,3 +25,55 @@
 .btn-light i{
     color: var(--primary);
 }
+.slider_nav .nav-link.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.slider_nav .nav-link {
+    color: var(--primary);
+}
+
+/* .slider_nav .nav-link:hover {
+    background-color: #e2d9f3;
+} */
+
+.slider_nav{
+    max-height: 250px;
+}
+
+@media(min-width: 1200px){
+    .slider_nav{
+    max-height: 300px;
+}
+}
+@media(min-width: 1400px){
+    .slider_nav{
+    max-height: 350px;
+}
+}
+
+.img-wrap{
+    position: relative;
+    padding: 1rem;
+}
+
+.img-wrap .badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.info-wrap{
+    padding: 1rem 1.2rem;
+}
+
+.info-wrap .title{
+    display: block;
+    text-decoration: none;
+    color: #51585E;
+}
+
+/* .price-wrap .price-discount{
+    font-size: 1.2rem;
+} */
