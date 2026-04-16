@@ -61,7 +61,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 91vh;
+    min-height: 100vh;
 }
 
 .content{
@@ -115,6 +115,51 @@ nav ul li a:hover{
     color: var(--light-color);
     padding: 1rem;
 }
+
+
+section {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center; 
+    gap: 4rem; 
+    max-width: var(--max-width); 
+    margin: 5rem auto; 
+    padding: 2rem;
+}
+
+.content-left {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 2rem; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+}
+
+.content-left h3 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.content-right {
+    flex: 1; 
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
 
 footer{
     background-color: var(--dark-color);
