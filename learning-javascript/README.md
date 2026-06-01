@@ -16,5 +16,6 @@ This repository contains practices and exercises for learning JavaScript. You ca
 * **[Lesson 13]** - classes styles
 * **[Lesson 14]** - event listeners
 * **[Lesson 15]** - mouse events
+* **[Lesson 16]** - event objects
 
 ---
