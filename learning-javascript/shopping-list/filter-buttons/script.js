@@ -43,6 +43,8 @@ function addItem(input){
     shoppingList.prepend(newItem);
 
     input.value = "";
+
+    updateFilteredItems();
 }
 
 function generateId() {
@@ -66,7 +68,9 @@ function handleFormSubmit(e){
 function toggleCompleted(e) {
     const li = e.target.parentElement;
     li.toggleAttribute("item-completed", e.target.checked);
-    console.log();
+
+    updateFilteredItems();
+
 }
 
 function removeItem(e){
@@ -104,6 +108,37 @@ function handleFilterSelection(e) {
 
     filterBtn.classList.add("btn-primary");
     filterBtn.classList.remove("btn-secondary");
+
+    filterItems(filterBtn.getAttribute("item-filter"));
+}
+
+function filterItems(filterType) {
+    const li_items = shoppingList.querySelectorAll("li");
+
+    for(let li of li_items){
+
+        li.classList.remove("d-flex");
+        li.classList.remove("d-none");
+
+        const item_completed = li.hasAttribute("item-completed");
+
+        if(filterType == "completed") {
+            //tamamlananları göster
+            li.classList.toggle(item_completed ? "d-flex":"d-none");
+        }else if(filterType == "incomplete"){
+            //tamamlanmayanları göster
+            li.classList.toggle(item_completed ? "d-none":"d-flex");
+        }else{
+            //hepsini göster
+            li.classList.toggle("d-flex");
+        }
+    } 
+}
+
+function updateFilteredItems() {
+    const activeFilter = document.querySelector(".btn-primary[item-filter]");
+
+    filterItems(activeFilter.getAttribute("item-filter"));
 }
 
 function createListItem(item) {
