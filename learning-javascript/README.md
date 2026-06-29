@@ -20,6 +20,7 @@ This repository contains practices and exercises for learning JavaScript. You ca
 * **[Lesson 17]** - keyboard events
 * **[Lesson 18]** - input events
 * **[Lesson 19]** - form data
+* **[Lesson 20]** - objects
 
 ---
 *Developer: Efe Muhammed Orhan*
