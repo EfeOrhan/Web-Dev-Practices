@@ -22,6 +22,7 @@ This repository contains practices and exercises for learning JavaScript. You ca
 * **[Lesson 19]** - form data
 * **[Lesson 20]** - objects
 * **[Lesson 21]** - function constructors
+* **[Lesson 22]** - constructor exercise
 
 ---
 *Developer: Efe Muhammed Orhan*
